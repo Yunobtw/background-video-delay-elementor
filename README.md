@@ -40,13 +40,13 @@ Improve page speed and LCP (Largest Contentful Paint) by deferring background Yo
 ## ❓ FAQ
 
 **Q: Does this work with any theme?**  
-A: Yes, as long as you use Elementor for layout.
+A: It works with most Elementor-compatible themes, but not all. Compatibility depends on your theme's structure and styling. Please test before going live.
 
 **Q: Can I use Vimeo or self-hosted videos?**  
 A: Currently, only YouTube is supported.
 
 **Q: Will this help my Core Web Vitals?**  
-A: Absolutely — it reduces render-blocking and improves LCP.
+A: Yes, it can improve LCP by deferring background video loading — but real results may vary depending on your theme, caching setup, and hosting.
 
 ---
 
