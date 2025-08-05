@@ -1,4 +1,4 @@
-# 🎥 Delayed YouTube Background Video for Elementor
+# 🎥 Defer YouTube Background Video for Elementor 
 
 Improve page speed and LCP (Largest Contentful Paint) by deferring background YouTube videos in Elementor sections.
 
