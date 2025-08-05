@@ -1,0 +1,4 @@
+.ebvcf-bg-video-container{position:absolute;inset:0;overflow:hidden;}
+.ebvcf-video-wrapper{position:absolute;inset:0;overflow:hidden;}
+.ebvcf-overlay{pointer-events:none;}
+.ebvcf-fallback-image{object-fit:cover;}

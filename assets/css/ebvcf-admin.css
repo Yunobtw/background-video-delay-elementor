@@ -1,0 +1,13 @@
+#rules{width:100%;border-collapse:collapse;margin-bottom:1em;}
+#rules thead th{background:#f1f1f1;padding:8px;text-align:left;font-weight:600;}
+#rules th,#rules td{border:1px solid #ddd;padding:6px;vertical-align:middle;}
+#rules input,#rules select{width:100%;box-sizing:border-box;padding:4px;}
+.fallback-image-preview{width:100px;}
+.fallback-image-preview img{max-width:100%;border:1px solid #ccc;border-radius:4px;}
+@media(max-width:900px){
+  #rules thead{display:none;}
+  #rules tr{display:block;margin-bottom:12px;border:1px solid #ddd;padding:8px;border-radius:4px;}
+  #rules td{display:flex;flex-wrap:wrap;gap:4px;border:none;padding:4px;}
+  #rules td>*{flex:1 1 100%;}
+  #rules td label{font-weight:600;}
+}
