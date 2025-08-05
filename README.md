@@ -40,13 +40,23 @@ Improve page speed and LCP (Largest Contentful Paint) by deferring background Yo
 ## ❓ FAQ
 
 **Q: Does this work with any theme?**  
-A: It works with most Elementor-compatible themes, but not all. Compatibility depends on your theme's structure and styling. Please test before going live.
-
-**Q: Can I use Vimeo or self-hosted videos?**  
-A: Currently, only YouTube is supported.
+**A:** It works with most Elementor-compatible themes, but not all. Compatibility depends on the theme's HTML and CSS structure. Always test before deploying to production.
 
 **Q: Will this help my Core Web Vitals?**  
-A: Yes, it can improve LCP by deferring background video loading — but real results may vary depending on your theme, caching setup, and hosting.
+**A:** Yes, especially for LCP (Largest Contentful Paint), by deferring the loading of background YouTube videos. However, actual results may vary depending on your caching plugins, theme, hosting, and other optimizations.
+
+**Q: Is it compatible with Elementor Flexbox containers?**  
+**A:** Yes, and it includes fallback image support in case Flexbox is used on mobile.
+
+**Q: Does it support Vimeo or self-hosted videos?**  
+**A:** Currently, only YouTube background videos are supported.
+
+**Q: Can I target specific pages only?**  
+**A:** Yes, the plugin includes per-page rules or global targeting options.
+
+---
+
+⚠️ **Note:** While this plugin helps improve performance by deferring video load, best results come when used together with proper caching, CDN, image optimization, and minimal render-blocking elements.
 
 ---
 
