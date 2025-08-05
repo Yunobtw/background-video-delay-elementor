@@ -16,13 +16,13 @@
   function onReady(cb,attempts){
     if(typeof ebvcf_rules!=='undefined') return cb();
     if(attempts>0) return setTimeout(()=>onReady(cb,attempts-1),200);
-    console.warn('EBVCF: ebvcf_rules indefinido');
+    // console.warn('EBVCF: ebvcf_rules indefinido');
   }
   $(function(){
     onReady(function(){
       ebvcf_rules.forEach(function(r){
         var sel=normalize(r.selector), $el=$(sel);
-        if(!$el.length) return console.warn('EBVCF: selector não encontrado',sel);
+        if(!$el.length) return;
         $el.each(function(){
           var $cont=$(this);
           if($cont.data('inited-'+r.video_id)) return;
