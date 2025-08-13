@@ -31,6 +31,8 @@
           if(r.fallback_image_url){
             $container.append($('<img class="ebvcf-fallback-image">').attr('src',r.fallback_image_url).css({position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)','min-width':'100%','min-height':'100%',objectFit:'cover',transition:'opacity .6s',opacity:1}));
           }
+          
+          try{$container.find('img.ebvcf-fallback-image').attr('alt', (r.fallback_image_alt||'Background image'));}catch(e){}
           $container.append($('<div class="ebvcf-overlay"></div>').css({position:'absolute',inset:0,backgroundColor:r.overlay_color,opacity:r.overlay_opacity,zIndex:2,pointerEvents:'none'}));
           $cont.prepend($container);
           setTimeout(function(){
