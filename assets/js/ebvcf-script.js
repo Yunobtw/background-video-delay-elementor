@@ -36,7 +36,7 @@
           setTimeout(function(){
             var $wrap=$('<div class="ebvcf-video-wrapper"></div>').css({position:'absolute',inset:0,overflow:'hidden',zIndex:1});
             var id=extractID(r.video_id);
-            var src=(r.privacy?'https://www.youtube-nocookie.com/embed/':'https://www.youtube.com/embed/')+id+'?autoplay=1&mute=1&loop=1&controls=0&playlist='+id+'&rel=0&modestbranding=1';
+            var src=(r.privacy?'https://www.youtube-nocookie.com/embed/':'https://www.youtube.com/embed/')+id+'?autoplay=1&mute=1&loop=1&controls=0&playlist='+id+'&rel=0&modestbranding=1&fs=0&disablekb=1&playsinline=1&iv_load_policy=3&showinfo=0&origin='+encodeURIComponent(window.location.origin);
             var $iframe=$('<iframe>').attr({src:src,frameborder:0,allow:'autoplay;encrypted-media',allowfullscreen:true,loading:'lazy',title:'Background Video'}).css({position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%) scale(1)',visibility:'hidden'});
             $wrap.append($iframe); $container.append($wrap);
             function adjust(){
